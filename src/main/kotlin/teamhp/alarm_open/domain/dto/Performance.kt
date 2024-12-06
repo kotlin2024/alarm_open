@@ -1,27 +1,22 @@
 package teamhp.alarm_open.domain.dto
 
+import jakarta.persistence.Column
+import java.util.*
+
 data class Performance(
-    val eventNm: String,
-    val opar: String,
-    val eventCo: String,
-    val eventStartDate: String,
-    val eventEndDate: String,
-    val eventStartTime: String,
-    val eventEndTime: String,
-    val chrgeInfo: String,
-    val mnnstNm: String,
-    val auspcInsttNm: String,
-    val phoneNumber: String,
+    val eventName: String,
+    val location: String?,
+    val startDate: String?,
+    val endDate: String?,
+    val startTime: String?,
+    val endTime: String?,
+    val chargeInfo: String?,
     val seatNumber: String?,
-    val admfee: String?,
-    val entncAge: String,
-    val atpn: String,
-    val homepageUrl: String,
-    val prkplceYn: String,
-    val rdnmadr: String,
-    val lnmadr: String,
-    val latitude: String,
-    val longitude: String,
-    val referenceDate: String,
-    val insttCode: String
+    val admissionFee: String?,
+    val ageLimit: String?,
+    val homePageUrl: String?,
+    val address: String?,
+    val latitude: Double?,
+    val longitude: Double?,
+    val region: Long,
 )

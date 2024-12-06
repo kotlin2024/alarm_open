@@ -1,6 +1,8 @@
 package teamhp.alarm_open.domain.entity
 
 import jakarta.persistence.*
+import teamhp.alarm_open.domain.dto.Performance
+import java.util.Date
 
 @Entity
 @Table(name = "performance_list")
@@ -45,10 +47,34 @@ class PerformanceDB(
     val latitude: Double?,
 
     @Column(name = "longitude")  // 경도
-    val longitude: Double?
+    val longitude: Double?,
+
+    @Column(name= "region")
+    val region: Long,
+
 ){
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     val id: Long = 0
 
+}
+
+fun PerformanceDB.toResponse(): Performance {
+    return Performance(
+        eventName = eventName,
+        location = location,
+        startDate = startDate,
+        endDate = endDate,
+        startTime = startTime,
+        endTime = endTime,
+        chargeInfo = chargeInfo,
+        seatNumber = seatNumber,
+        admissionFee = admissionFee,
+        ageLimit = ageLimit,
+        homePageUrl = homePageUrl,
+        address = address,
+        latitude = latitude,
+        longitude = longitude,
+        region =region,
+    )
 }

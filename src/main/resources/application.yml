@@ -1,1 +1,9 @@
-spring.application.name=alarm_open
+spring:
+  datasource:
+    url: jdbc:postgresql://aws-0-ap-northeast-2.pooler.supabase.com:6543/postgres
+    username: postgres.vloidcrotvrhbkdpgmrb
+    password: RRWIBxidxH81czex
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
