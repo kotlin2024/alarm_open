@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import teamhp.alarm_open.domain.dto.Performance
+import teamhp.alarm_open.domain.dto.RegionList
 import teamhp.alarm_open.domain.entity.PerformanceDB
 import teamhp.alarm_open.domain.service.PerformanceService
 
@@ -20,5 +21,10 @@ class PerformanceController(
     fun getAllPerformanceList(): ResponseEntity<List<PerformanceDB>> {
         return ResponseEntity.status(HttpStatus.OK).body(performanceService.getAllPerformanceList())
 
+    }
+
+    @GetMapping("/region_image")
+    fun getRegionImageUrl(): ResponseEntity<List<RegionList>>{
+        return ResponseEntity.status(HttpStatus.OK).body(performanceService.getRegionImageUrl())
     }
 }

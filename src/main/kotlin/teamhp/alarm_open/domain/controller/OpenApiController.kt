@@ -18,9 +18,5 @@ class OpenApiController(
         return ResponseEntity.status(HttpStatus.OK).body(openApiService.getAllRegionPerformanceList())
     }
 
-//    @GetMapping("/region_list")
-//    fun getRegionList(){
-//        //TODO() 제공하는 모든 지역 조회
-//    }
 
 }
