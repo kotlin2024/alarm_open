@@ -1,4 +1,5 @@
 # 지역 알리미 애플리케이션
+ <img src="images/지역행사 알리미 아이콘.jpg" alt="123" width="200px" height="200px">
 
 ## 프로젝트 설명
 이 애플리케이션은 공연 정보를 관리하고 조회할 수 있는 서버 애플리케이션입니다. Docker와 AWS EC2를 통해 배포되며, Spring Boot와 Kotlin으로 개발되었습니다.
@@ -29,3 +30,6 @@
   <img src="images/KakaoTalk_20241208_172930555_01.png" alt="123" width="300px" height="600px">
   <img src="images/KakaoTalk_20241208_172930555_02.png" alt="123" width="300px" height="600px">
 </div>
+
+## 시연영상
+https://www.youtube.com/shorts/3QZfiWbzgts
